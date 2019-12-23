@@ -1,0 +1,19 @@
+<% if(user_signed_in?)%>
+<%= @user.email%>
+<br> <br>
+<h1>Welcome  to the Club</h1>
+<%= link_to "sign out" , destroy_user_session_path , method: :delete %><br> <br>
+
+<%= link_to "edit eeeeeee" , edit_user_registration_path %><br> <br>
+
+<% else %>
+<h1>Welcome to pageeee
+</h1>
+
+<%= link_to "sign in travelar"  , new_user_session_path %>
+<% end %>
+
+
+<h2>
+<%= link_to "all articles" , articles_path %>
+</h2>

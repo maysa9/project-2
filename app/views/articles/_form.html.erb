@@ -1,0 +1,22 @@
+<%= form_for :article, url:{action: "create"} do |form| %>
+ 
+
+  <div class="field">
+    <%= form.label :cityname %>
+    <%= form.text_field :cityname %>
+  </div>
+
+  <div class="field">
+    <%= form.label :article %>
+    <%= form.text_field :article %>
+  </div>
+
+  <div class="field">
+    <%= form.label :img %>
+    <%= form.text_field :img %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
