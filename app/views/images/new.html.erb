@@ -1,0 +1,12 @@
+<%= form_for :image, url:{action: "create"} do |f| %>
+ 
+
+  <div class="field">
+    <%= f.label :img %>
+    <%= f.text_field :img %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

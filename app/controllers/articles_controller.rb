@@ -1,13 +1,14 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only:[:show]
   before_action :authenticate_user!, only:[:edit, :update, :destroy , :new, :create]
-  rescue_from ActiveRecord::RecordNotFound, with: :handle_record_not_found
+  
   def index
     @articles = Article.all
   end
 
   def show
-    # @article = current_user.articles.find(params[:id])
+    @article = Article.find(params[:id])
+    @images = @article.images
   end
 
   def edit
@@ -16,6 +17,7 @@ class ArticlesController < ApplicationController
 
   def new
     @article = current_user.articles.new
+   
   end
   def create
     @article = current_user.articles.new(article_params)
@@ -33,16 +35,19 @@ class ArticlesController < ApplicationController
     @article = current_user.articles.find(params[:id])
     @article.destroy
     redirect_to article_path(@article)
+  rescue ActiveRecord::RecordNotFound  
+    redirect_to :controller => "articles", :action => "index"
+    return
 
   end
-  def handle_record_not_found
-    # Send it to the view that is specific for Post not found
-    render :not_found
-  end
+
   private
   
   def set_article
     @article = Article.find(params[:id])
+  rescue ActiveRecord::RecordNotFound  
+    redirect_to :controller => "articles", :action => "index"
+    return
   end
 
   # Never trust parameters from the scary internet, only allow the white list through.

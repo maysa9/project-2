@@ -1,3 +1,53 @@
 // Place all the styles related to the Articles controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.showpage{
+
+    color: lightgray;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+
+
+body{
+    background:rgb(124, 123, 175) ;
+    text-align: center;
+}
+h1{
+    color: #E5DDC8;
+}
+a{
+    text-decoration: none;
+    font-size: 16pt;
+    font-weight: bold;
+    // color: #DB1F48;
+}
+.indexMain{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.artistCard{
+    width: 350px;
+    background: #004369;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+.card{
+    width: 350px;
+    margin-bottom: 20px;
+    background: #004369;
+    border-radius: 5%;
+}
+.card>img{
+    border-radius: 5%;
+}
+.btn-secondary{
+    color: purple;
+}
+.btn-primary{
+    color: red;
+}
