@@ -7,14 +7,15 @@ class ImagesController < ApplicationController
         redirect_to article_path(params[:article_id])
     end
 def destroy
-    @image = current_user.articles.find(params[:id]).image(image_params)
+    @image = current_user.articles.find(params[:article_id]).images.find(params[:id])
     @image.destroy
-    redirect_to article_path(@article)
+    redirect_to article_path(params[:article_id])
   rescue ActiveRecord::RecordNotFound  
     redirect_to :controller => "articles", :action => "index"
     return
 
 end 
+
     private
     def image_params
         params.require(:image).permit(:img)

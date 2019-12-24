@@ -1,20 +1,173 @@
-<div class ="">
-<% if(user_signed_in?)%>
-<%= @user.email%>
-<br> <br>
-<h1>Welcome  to the Club</h1>
-<%= link_to "sign out" , destroy_user_session_path , method: :delete %><br> <br>
 
-<%= link_to "edit eeeeeee" , edit_user_registration_path %><br> <br>
-
-<% else %>
-<h1>Welcome to pageeee
-</h1>
-
-<%= link_to "sign in travelar"  , new_user_session_path %>
-<% end %>
+<!--  the first section bg and text and links -->
+<header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="mx-auto my-0 text-uppercase">the escapers</h1>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">the most trips that will cnvdfjnvjdfnvjd</h2>
+        <%= link_to "discover" , articles_path , class: "btn btn-primary js-scroll-trigger"%>
+      </div>
+    </div>
+  </header>
 
 
-<h2>
-<%= link_to "all articles" , articles_path %>
-</h2>
+  <!-- About Section -->
+  <!-- it has the a Welcoming and user info and abrif -->
+  <section id="about" class="about-section text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 class="text-white mb-4">Welcome Escaper</h2>
+          <p class="text-white-50"><% if(user_signed_in?)%>
+        <%= @user.email%>
+
+        <%= link_to "sign out" , destroy_user_session_path , method: :delete %><br> <br>
+
+        <%= link_to "edit Your  Profile" , edit_user_registration_path %><br> <br>
+
+        <% else %>
+        <h1>Welcome  Let’s Scape’s 
+        </h1>
+
+        <%= link_to "sign in travelar"  , new_user_session_path %>
+        <% end %>
+
+            <a href="##">##</a>. hey there i see u</p>
+        </div>
+     
+  </section>
+  
+ <!-- Projects Section -->
+  <section id="projects" class="projects-section bg-light">
+    <div class="container">
+
+      <!-- Featured Project Row -->
+      <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+        <div class="col-xl-8 col-lg-7">
+           <%= image_tag "mountain.jpeg", class: "img-fluid mb-3 mb-lg-0"%>
+         
+        </div>
+        <div class="col-xl-4 col-lg-5">
+          <div class="featured-text text-center text-lg-left">
+            <h4>  John Muir -</h4>
+            <p class="text-black-50 mb-0"> “The mountains are calling and I must go.”</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project One Row -->
+      <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+        <div class="col-lg-6">
+        <%= image_tag "desert2.jpeg", class: "img-fluid"%>
+        </div>
+        <div class="col-lg-6">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-left">
+                <h4 class="text-white">Albert Camus -</h4>
+                <p class="mb-0 text-white-50"> As a remedy to life in society I would suggest the big city. Nowadays, it is the only desert within our means.</p>
+                <hr class="d-none d-lg-block mb-0 ml-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Two Row -->
+      <div class="row justify-content-center no-gutters">
+        <div class="col-lg-6">
+        <%= image_tag "forst.jpeg", class: "img-fluid"%>
+      
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="bg-black text-center h-100 project">
+            <div class="d-flex h-100">
+              <div class="project-text w-100 my-auto text-center text-lg-right">
+                <h4 class="text-white">John Muir -</h4>
+                <p class="mb-0 text-white-50">And into the forest I go, to lose my mind and find my soul. </p>
+                <hr class="d-none d-lg-block mb-0 mr-0">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+<!-- Signup Section -->
+  <section id="signup" class="signup-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-lg-8 mx-auto text-center">
+
+          <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+          <h2 class="text-white mb-5">Subscribe to receive updates!</h2>
+
+          <form class="form-inline d-flex">
+            <input type="email" class="form-control flex-fill mr-0 mr-sm-2 mb-3 mb-sm-0" id="inputEmail" placeholder="Enter email address...">
+            <button type="submit" class="btn btn-primary mx-auto">Subscribe</button>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section bg-black">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-map-marked-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Address</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">4923 Market Street, Orlando FL</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-envelope text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Email</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">
+                <a href="#">hello@yourdomain.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 mb-md-0">
+          <div class="card py-4 h-100">
+            <div class="card-body text-center">
+              <i class="fas fa-mobile-alt text-primary mb-2"></i>
+              <h4 class="text-uppercase m-0">Phone</h4>
+              <hr class="my-4">
+              <div class="small text-black-50">+1 (555) 902-8832</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="social d-flex justify-content-center">
+        <a  class="mx-2">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a class="mx-2">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="mx-2">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+   

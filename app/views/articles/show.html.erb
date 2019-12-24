@@ -1,3 +1,5 @@
+
+
 <h1>Articles#show</h1>
 <p>Find me in app/views/articles/show.html.erb</p>
 
@@ -7,13 +9,11 @@
 <h2>article <%= @article.article %> </h2>
 <% @images.each do |image| %>
    <img src="<%= image.img %>" >
-   <%=link_to 'Destroy', article_image_path(@article.id, image), method: :delete, data: { confirm: 'Are you sure?' } %>
+   <%=link_to 'Destroy', article_image_path(@article.id, image), method: :delete %>
 
 <%end %>
 
 <%= link_to "Add new Image", new_article_image_path(@article) %>
-<%= link_to 'Edit', edit_article_image_path(@article) %>
-<%# link_to 'Destroy', article_image_path(@article.id,@image), method: :delete, data: { confirm: 'Are you sure?' } %>
 
 
 <%= link_to 'Edit', edit_article_path(@article) %> 
