@@ -5,7 +5,9 @@
 <% @articles.each do |article| %>
 <div class= "article">
 <div class="card h-100">
+        <%if article.images.first%>
         <a ><img class="card-img-top" src="<%= article.images.first.img %>" alt=""></a>
+        <% end %>
         <div class="card-body">
           <h4 class="card-title">
             <a href="<%= article_path(article) %>"><%= article.cityname %></a>

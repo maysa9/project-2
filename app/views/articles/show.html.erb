@@ -1,19 +1,18 @@
 
 <br><br><br>
-<div class= "article">
 
-<h2> <%= @article.cityname %> </h2></div><div class= "article"><br><br><br><br>
-<br><br><br><br><h2> <%= @article.article %> 
-<br><br> <div class= "article">
+<div class="show">
+<h1> <%= @article.cityname %> </h1>
+ <p><%= @article.article %></p> 
 <% @images.each do |image| %>
    <img src="<%= image.img %>"  class="artimg">
-  <div class= "article"> <%=link_to 'Destroy', article_image_path(@article.id, image), method: :delete, class:"btn btn-outline-secondary" %>
-</div>
+  <%=link_to 'Destroy', article_image_path(@article.id, image), method: :delete, class:"btn btn-outline-secondary" %>
+
 <%end %>
-<br><br></div><div class= "article">
+<br><br>
+</div>
 <%= link_to "Add new Image", new_article_image_path(@article) , class:"btn btn-outline-secondary"%>
 
 
 <%= link_to 'Edit', edit_article_path(@article), class:"btn btn-outline-secondary" %> 
 <%= link_to 'Back', articles_path, class:"btn btn-outline-secondary" %>
-</div>
