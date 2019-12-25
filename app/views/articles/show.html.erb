@@ -1,20 +1,19 @@
 
+<br><br><br>
+<div class= "article">
 
-<h1>Articles#show</h1>
-<p>Find me in app/views/articles/show.html.erb</p>
-
-
-
-<h2>city name  <%= @article.cityname %> </h2>
-<h2>article <%= @article.article %> </h2>
+<h2> <%= @article.cityname %> </h2></div><div class= "article"><br><br><br><br>
+<br><br><br><br><h2> <%= @article.article %> 
+<br><br> <div class= "article">
 <% @images.each do |image| %>
-   <img src="<%= image.img %>" >
-   <%=link_to 'Destroy', article_image_path(@article.id, image), method: :delete %>
-
+   <img src="<%= image.img %>"  class="artimg">
+  <div class= "article"> <%=link_to 'Destroy', article_image_path(@article.id, image), method: :delete, class:"btn btn-outline-secondary" %>
+</div>
 <%end %>
+<br><br></div><div class= "article">
+<%= link_to "Add new Image", new_article_image_path(@article) , class:"btn btn-outline-secondary"%>
 
-<%= link_to "Add new Image", new_article_image_path(@article) %>
 
-
-<%= link_to 'Edit', edit_article_path(@article) %> 
-<%= link_to 'Back', articles_path %>
+<%= link_to 'Edit', edit_article_path(@article), class:"btn btn-outline-secondary" %> 
+<%= link_to 'Back', articles_path, class:"btn btn-outline-secondary" %>
+</div>

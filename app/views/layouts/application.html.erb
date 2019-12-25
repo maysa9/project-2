@@ -13,28 +13,12 @@
 
   </head>
 
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+  
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <%= link_to "the escapers" , root_path , class:"navbar-brand js-scroll-trigger" %>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        Menu
-        <i class="fas fa-bars"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+      <%= link_to "the escapers" , root_path , class:"navbar-brand js-scroll-trigger" %></div>
+      </nav>
+  
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -47,6 +31,8 @@
 
   <p class="notice"><%= notice %></p>
        <p class="alert"><%= alert %></p>
+   
+      
     <%= yield %>
 
     <footer class="bg-black small text-center text-white-50">

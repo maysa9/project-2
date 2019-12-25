@@ -1,18 +1,23 @@
+
+
 <%= form_for :article, url:{action: "create"} do |form| %>
  
 
   <div class="field">
     <%= form.label :cityname %>
-    <%= form.text_field :cityname %>
+    <%= form.text_field :cityname%>
   </div>
-
+<br><br><br>
   <div class="field">
     <%= form.label :article %>
     <%= form.text_field :article %>
   </div>
 
-  
+  <div class= "article">
   <div class="actions">
     <%= form.submit %>
+
+  </div>
   </div>
 <% end %>
+

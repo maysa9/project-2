@@ -1,10 +1,15 @@
 <h1>Articles#new</h1>
 <p>Find me in app/views/articles/new.html.erb</p>
 
-
+<br>
+<br>
+<br>
+<div class= "article">
 <h1>New Article</h1>
-
+</div>
+<div class= "article">
 <%= render 'form', Article: @Article %>
 
 
-<%= link_to 'Back', articles_path %>
+<%= link_to 'Back', articles_path, class:"btn btn-outline-secondary" %>
+</div>

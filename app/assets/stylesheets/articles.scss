@@ -11,6 +11,21 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-grayscale/blob/master/LICENSE)
  */
 
+.card{
+    width: 500px;
+    
+}
+.article{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.artimg{
+    width: 700px;
+}
+
+ //////////////
 #mainNav {
     min-height: 56px;
     background-color: #fff;
