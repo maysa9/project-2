@@ -1,24 +1,43 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# the escapers 
+# project 2 
 
-Things you may want to cover:
 
-* Ruby version
+its an traveling suggestion website that allowes to display the articles but for do any kind of changing  you have to sign in or sign up .
 
-* System dependencies
+# user story 
 
-* Configuration
+# Day 1 :
 
-* Database creation
+- make a database and device and models and migrate them 
+- Did the controllers and the relation between the one to many models 
+- Create the crud and its functions and views 
+- Make the user can see the articles and just display the website 
+- The user authority for crud 
 
-* Database initialization
+# Day 2 :
 
-* How to run the test suite
+- Created a new model table for images
+- Make the relation with the article and images 
+- Create the image controller and its methods 
 
-* Services (job queues, cache servers, search engines, etc.)
+# Day 3 :
 
-* Deployment instructions
+- Learned how to deal with bootstrap 
+- Designed the index page and a little sprinkle on the other pages 
+- Make a loop for the articles to show it on card automatically 
 
-* ...
+# Day 4 :
+
+- A test on the functionality for the website 
+- Did the final touch ups on it and wrapped it off 
+
+
+# wireframe 
+
+
+
+
+
+# ERD 
+
