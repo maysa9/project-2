@@ -7,7 +7,7 @@ its an traveling suggestion website that allowes to display the articles but for
 
 # user story 
 
-# Day 1 :
+ Day 1 :
 
 - make a database and device and models and migrate them 
 - Did the controllers and the relation between the one to many models 
@@ -15,19 +15,19 @@ its an traveling suggestion website that allowes to display the articles but for
 - Make the user can see the articles and just display the website 
 - The user authority for crud 
 
-# Day 2 :
+Day 2 :
 
 - Created a new model table for images
 - Make the relation with the article and images 
 - Create the image controller and its methods 
 
-# Day 3 :
+ Day 3 :
 
 - Learned how to deal with bootstrap 
 - Designed the index page and a little sprinkle on the other pages 
 - Make a loop for the articles to show it on card automatically 
 
-# Day 4 :
+ Day 4 :
 
 - A test on the functionality for the website 
 - Did the final touch ups on it and wrapped it off 
@@ -40,4 +40,3 @@ its an traveling suggestion website that allowes to display the articles but for
 
 
 # ERD 
-
