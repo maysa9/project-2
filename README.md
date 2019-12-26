@@ -40,3 +40,6 @@ Day 2 :
 
 
 # ERD 
+
+<img src="images/ERD2.png" alt="bored"
+	title="game bored" width="400" height="400" />
